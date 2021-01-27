@@ -339,10 +339,8 @@ const getUserStats = async () => {
   );
 
   $('#statscipending').text(
-    parseFloat(
-      parseFloat($('#statstotaldouble').text()) -
-        parseFloat($('#statscigenerated').text())
-    ).toFixed(2)
+    parseFloat(amountuser) -
+            parseFloat(($('#userpayout').text() * 3) / 4)
   );
 };
 
