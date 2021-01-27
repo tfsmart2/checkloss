@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #050042;
+    --secondary-color: #060952;
+    --input-elem-color: #3c386c;
+    --primary-border-color: #0E329B;
+    --secondary-border-color:#1865F3;
+
+  }
+
+.popupsection .modal-content {
+    background: var(--primary-color);
+}
+
+.popupsection .modal-body {
+    padding: 44px 0 0 0;
+}
+
+button.closebtn {
+    background: var(--input-elem-color);
+    color: var(--secondary-border-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    font-size: 18px;
+    line-height: 30px;
+    position: absolute;
+    right: 30px;
+    top: 18px;
+}
+
+.h2basictitle {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.h5basictitle {
+    color: #fff;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+.formaddress input {
+    background: var(--input-elem-color) !important;
+    border: 1px solid #585481;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 0;
+}
+
+.dashed-border {
+    margin: 30px 0;
+    border-bottom: 1px dashed var(--primary-border-color)!important;
+}
+
+.h5basictitle01 {
+    color: #ff0000;
+    margin: 0 0 25px 0;
+}
+
+@media(min-width: 768px) {
+    .bm-right {
+        border-right: 2px solid var(--primary-border-color)!important;
+    }
+}
+
+.boxcontain {
+    padding: 0 100px;
+}
+
+.boxcontain h6 {
+    color: #fff;
+    font-weight: 600;
+}
+
+.boxcontain p {
+    color: #9896B1;
+}
+
+.depositesinner {
+    background: var(--secondary-color);
+    padding: 15px 20px;
+    margin: 5px 45px;
+}
+
+.totaldeposites {
+    position: relative;
+    border-left: 5px solid #1865f3;
+    padding: 10px 20px;
+}
+
+.totaldeposites h6 {
+    color: #fff;
+    font-weight: 600;
+}
+
+.totaldeposites p {
+    color: #9896B1;
+}
+
+.numberdeposites {
+    overflow: hidden;
+    padding: 0 0 0 45px;
+}
+
+.numberdeposites h6 {
+    color: #fff;
+    font-weight: 600;
+}
+
+.numberdeposites h6 span {
+    color: #9899B7;
+    display: block;
+    float: right;
+}
+
+.numberdeposites p.lddate {
+    font-weight: 600;
+}
+.numberdeposites p {
+    color: #fff;
+    margin: 0 0;
+}
+
+.numberdeposites p span {
+    color: #fff;
+}
+
+.bdr {
+    height: 96px;
+    width: 2px;
+    background: #09186d;
+}
+
+.referralComsion {
+    background: var(--secondary-color);
+    padding: 15px 20px;
+    margin: 5px 45px;
+}
+
+.referraltext {
+    position: relative;
+    padding: 10px 20px;
+}
+
+.referraltext h6 {
+    color: #fff;
+    font-weight: 500;
+}
+
+.referraltext p {
+    color: #9899B7;
+}
+
+.formaddress {
+    margin: 0 30px;
+}
+
+.modal-footer.footersection {
+    background: var(--input-elem-color);
+    border: 0;
+    margin: 20px 0 0 0;
+}
+
+.footersection .btn-dark {
+    color: #fff;
+    background-color: #1865f3;
+    border-color: #1865f3;
+    padding: 8px 28px !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.footersection .btn-dark:hover {
+    color: #1865f3;
+    background-color: #fff;
+    border-color: #fff;
+    padding: 8px 28px !important;
+}
+
+@media screen and (max-width:768px) {
+    .boxcontain {
+        padding: 0 50px !important;
+    }
+    .numberdeposites {
+        padding: 0 20px;
+        border-left: 5px solid #1865f3;
+    }
+}
+
+a[data-toggle='popover']{
+    max-height: 32px;
+    margin-left: 5px;
+}
+
+button[data-dismiss='modal'] span{
+    position: relative;
+    top: -2px;
+}
+button[data-dismiss='modal']{
+    font-weight: 500;
+    font-size: 22px;
+}

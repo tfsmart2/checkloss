@@ -1,0 +1,388 @@
+/* Globals */
+:root {
+  --theme-red: #ff0000;
+  --theme-blue: #1865f3;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #030025;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.sec-title {
+  font-size: 44px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+hr {
+  border-top: 1px solid rgb(24 101 243);
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-blue {
+  color: #6b90d4;
+}
+
+.text-theme-blue {
+  color: var(--theme-blue);
+}
+
+.text-red {
+  color: var(--theme-red);
+}
+
+.text-green {
+  color: var(--success);
+}
+
+.lg-value {
+  font-size: 55px;
+}
+
+.divider {
+  border-bottom: 2px solid var(--theme-blue);
+  width: 100px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.btn {
+  font-size: 18px;
+  padding: 8px 20px;
+}
+
+.btn-danger {
+  background-color: var(--theme-red);
+}
+
+.btn-danger:hover {
+  background-color: #d40015;
+  border-color: #d40015;
+}
+
+.btn-primary {
+  background-color: var(--theme-blue);
+}
+
+.btn-primary:hover {
+  background-color: #0060c5;
+  border-color: #0060c5;
+}
+
+.capital-container input:read-only {
+  color: var(--green);
+  font-weight: bold;
+}
+
+/* Header Section */
+header {
+  min-height: 105px;
+}
+
+header .fixed-top {
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 45%);
+}
+
+header .navbar {
+  background-color: #030025;
+}
+
+.logo {
+  width: 200px;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  background-color: #1865f3b0;
+}
+
+.dropdown-item {
+  color: #fff;
+}
+
+/* Carousel Section */
+.carousel {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  max-height: 300px;
+}
+
+/* Why Tron Section */
+.svg-img {
+  max-width: 35%;
+}
+
+/* Invest/Capital Section */
+.input-group-text {
+  background-color: var(--theme-blue);
+  color: #fff;
+}
+
+.input-group-text img {
+  width: 20px;
+}
+
+label h5 {
+  font-weight: 400;
+}
+
+.invest-container,
+.capital-container {
+  max-width: 360px;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+/* Modal */
+.modal-header {
+  background: var(--theme-blue);
+  color: #fff;
+}
+
+.modal-footer {
+  background-color: #c7c7c7;
+}
+
+#statsModal .modal-dialog {
+  max-width: 960px;
+}
+
+.b-right {
+  border-right: 1px solid #ddd;
+}
+
+.dashed-border {
+  margin: 30px 0;
+  border-bottom: 1px dashed #ddd;
+}
+
+/* FAQ Section */
+#accordion {
+  display: block;
+  margin: auto;
+}
+
+#accordion .card-header {
+  background-color: #e5e5e5;
+  cursor: pointer;
+  border: none;
+}
+
+#accordion .btn {
+  background-color: transparent;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+#accordion .btn:focus {
+  outline: 0;
+  box-shadow: unset;
+}
+
+#accordion .card {
+  margin-bottom: 4px;
+  border: none !important;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#accordion .toggle-icon {
+  position: absolute;
+  right: 30px;
+  top: 25px;
+}
+
+#accordion .toggle-icon i {
+  color: #1865f3;
+  font-size: 22px;
+}
+
+#accordion .collapsed .fa-angle-up {
+  display: none;
+}
+
+#accordion .collapsed .fa-angle-down {
+  display: block;
+}
+
+#accordion .fa-angle-up {
+  display: block;
+}
+
+#accordion .fa-angle-down {
+  display: none;
+}
+
+/* Footer Section */
+.copyright-text {
+  margin: 0;
+  line-height: 70px;
+}
+
+footer .nav {
+  line-height: 55px;
+}
+
+/* Custom Popover */
+.custom-popover {
+  background: rgb(40 167 69 / 0.8);
+  display: flex;
+  padding: 10px 20px;
+  position: fixed;
+  box-shadow: 1px 1px 10px 4px rgb(40 167 69 / 0.8);
+  bottom: 10px;
+  right: -300px;
+  transition: all 0.4s ease-in-out;
+  z-index: 9999;
+}
+
+.custom-popover span {
+  font-size: 20px;
+}
+
+.custom-popover-active {
+  right: 10px;
+}
+
+/* Error Popover */
+.popup {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: -100px;
+  transition: all 0.4s ease-in-out;
+  z-index: 9999;
+}
+
+.popup.show {
+  top: 10px !important;
+}
+
+.popup .box {
+  margin: auto;
+  padding: 10px 20px;
+  max-width: 100%;
+}
+
+.error-popover .box {
+  background: rgb(255 0 0 / 0.8);
+  box-shadow: 1px 1px 10px 4px rgb(255 0 0 / 0.8);
+}
+
+.success-popover .box {
+  background: rgb(40 167 69 / 0.8);
+  box-shadow: 1px 1px 10px 4px rgb(40 167 69 / 0.8);
+}
+
+.bigger-font {
+  font-size: 1.2rem;
+}
+
+/* Media Queries */
+@media (max-width: 576px) {
+  .sec-title {
+    font-size: 30px;
+  }
+  .svg-img {
+    max-width: 18%;
+  }
+  .sm-value {
+    font-size: 24px;
+  }
+  .lg-value {
+    font-size: 30px;
+  }
+  .copyright-text {
+    margin: 10px 0;
+    line-height: 25px;
+  }
+  footer .nav {
+    line-height: 15px;
+  }
+}
+
+.amount {
+  min-width: 130px;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Timer */
+
+ul#timer {
+	list-style: none;
+	padding: 0;
+	display: block;
+  text-align: left;
+  color: green;
+	font-size: 2rem;
+
+}
+ul#timer li {
+	display: inline-block;
+}
+ul#timer li span {
+	/* font-size: 80px; */
+	font-weight: 300;
+	line-height: 80px;
+}
+ul#timer li.seperator {
+	/* font-size: 80px; */
+	line-height: 70px;
+	vertical-align: top;
+}
+ul#timer li p {
+	font-size: 1rem;
+}
+
+/*smartcode */
+
+.smartcode {
+height:calc(100% - 30px); 
+width:calc(100% );
+text-align:left;
+line-height:14px;
+/* background-color:#282828; */
+background-color:#030025; 
+border-radius:15px;
+box-shadow:inset 0 0 50px #1b1b1b;
+color:white;
+padding:16px;
+font-size:12px;
+border:none;
+outline:none;
+margin-top:20px
+}
