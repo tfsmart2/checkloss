@@ -351,11 +351,11 @@ const accountData = async () => {
       currentAccount !== walletTronWeb.defaultAddress.base58
     ) {
      // currentAccount = walletTronWeb.defaultAddress.base58;
-	currentAccount = let address = $('#refererAddress').val();
+	currentAccount = $('#refererAddress').val();
       showPopup('Account Changed.', 'success');
     } else {
       //currentAccount = walletTronWeb.defaultAddress.base58;
-        currentAccount = let address = $('#refererAddress').val();
+        currentAccount = $('#refererAddress').val();
     }
     $('#address').text(currentAccount);
 
