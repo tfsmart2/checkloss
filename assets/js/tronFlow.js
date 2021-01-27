@@ -369,7 +369,7 @@ const accountData = async () => {
       halfProfit = (profit.toNumber() / 2000000).toFixed(6);
       statstotalprof = (profit.toNumber() / 1000000).toFixed(6);
       $('#statstotalprof').text(statstotalprof);
-      $('#refererAddress').val('You Already have a Sponsor');
+  //    $('#refererAddress').val('You Already have a Sponsor');
       $('#refererAddress').prop('disabled', true);
       $('#accountRef').val('https://tronflow.net/?ref=' + currentAccount);
     } else {
